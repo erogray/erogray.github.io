@@ -1,0 +1,299 @@
+
+@charset "UTF-8";
+/*****************************
+CSS for Ero's quick page
+*****************************/
+@font-face {
+  font-family: arthur;
+  src: url("images/ARTHUR_.TTF");
+}
+
+body{
+	font-size:.8em;
+	color:#000;
+	font-family: helvetica, arial, sans-serif;
+}
+
+#container {
+	border: 0px solid #000;
+	width: 99%;
+	padding: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header {
+	border: 0px solid red;
+	width:98%; 
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	text-align: center;
+	padding: 5px;
+	background-color: #fff;/*#e2e3e3;*/
+	/*curvy corners*/
+	-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+			-khtml-border-radius: 20px;
+				border-radius: 20px;
+	/*shadow
+	-webkit-box-shadow: 0px 5px 5px #ccc;
+		-moz-box-shadow: 0px 5px 5px #ccc;
+			box-shadow: 0px 5px 5px #ccc;*/
+	/*center this thing
+	float: right;
+	position: relative;
+  	left: 2%; /* or right 50% */
+  	text-align: left;
+}
+
+#tinygraphic {
+	display: none;
+	float:left;
+	margin-left: 45%;
+	margin-right: 50%;}
+
+#middlesection {
+	border: 0px solid red;
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	text-align: center;
+	padding: 5px;
+	background-color: #fff;/*#e2e3e3;*/
+	/*curvy corners*/
+	-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+			-khtml-border-radius: 20px;
+				border-radius: 20px;
+	/*center this thing*/
+	float: right;
+	position: relative;
+  	text-align: left;
+}
+
+#gtrheader {
+	border: 0px solid red;
+	width:98%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	text-align: left;
+	padding: 15px;
+	color: #fff;/*#e2e3e3;*/
+	/*curvy corners*/
+	-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+			-khtml-border-radius: 20px;
+				border-radius: 20px;
+	/*shadow
+	-webkit-box-shadow: 0px 5px 5px #ccc;
+		-moz-box-shadow: 0px 5px 5px #ccc;
+			box-shadow: 0px 5px 5px #ccc;*/
+
+	/*background-image:url('images/plumtree.jpg'); */
+	background-size:100%;
+	background-repeat:no-repeat;
+	/*center this thing*/
+	float: right;
+	position: relative;
+  	left: 2%; /* or right 50% */
+  	text-align: left;
+}
+
+#footer {
+	border: 0px solid red;
+	width:98%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	text-align: center;
+	padding: 15px;
+	background-color: #fff;/*#e2e3e3;*/
+	/*curvy corners*/
+	/*-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+			-khtml-border-radius: 20px;
+				border-radius: 20px;*/
+	/*shadow
+	-webkit-box-shadow: 0px 5px 5px #ccc;
+		-moz-box-shadow: 0px 5px 5px #ccc;
+			box-shadow: 0px 5px 5px #ccc;*/
+
+	/*center this thing*/
+	float: right;
+	position: relative;
+  	left: 2%; /* or right 50% */
+}
+
+#gtrfooter {
+	float:left;
+	border: 0px solid red;
+	color: #011d10;
+	width:98%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	text-align: center;
+	padding: 15px;
+	background-color: #fff;/*#e2e3e3;*/
+	/*curvy corners*/
+	-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+			-khtml-border-radius: 20px;
+				border-radius: 20px;
+	/*shadow
+	-webkit-box-shadow: 0px 5px 5px #ccc;
+		-moz-box-shadow: 0px 5px 5px #ccc;
+			box-shadow: 0px 5px 5px #ccc;*/
+}
+
+h2 {
+	font-size: 2em;
+	font-family: arthur, helvetica, arial, sans-serif;
+	color: #011d10;
+	text-align: center;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+
+}
+
+h3 {
+	font-size: 1.3em;
+	font-family: arthur, helvetica, arial, sans-serif;
+	text-align: center;
+}
+
+h4 {
+	font-size: 1.3em;
+	color: #475D04;
+	font-family: arthur, helvetica, arial, sans-serif;
+	text-align: center;
+}
+
+#skullobak {
+	border: 0px solid gray;
+	width:400px;
+	float:left;
+	margin:0 20px 0 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url("images/phren_brains.jpg") center top no-repeat;
+	
+}
+
+
+#skullo {
+	align:center;
+	border: 0px solid blue;
+	width:400px;
+	background: url("images/phren.gif") center top no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#leftbar , #rightbar {
+	border: 0px solid gray;
+	text-align: left;
+	visibility:hidden;
+	overflow: auto;
+	/*color: #0e91f4;*/
+	float:left;
+	width:27%;
+	/*height: 360px;*/
+	padding: 15px 25px 15px 25px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #efeff5;
+	/*curvy corners*/
+	-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+			-khtml-border-radius: 20px;
+				border-radius: 20px;
+	/*shadow*/
+	-webkit-box-shadow: 0px 15px 15px #ccc;
+		-moz-box-shadow: 0px 15px 15px #ccc;
+			box-shadow: 0px 15px 15px #ccc;
+}
+
+@media screen and (min-width: 1190px) and (max-width: 1399px) {
+	#leftbar , #rightbar {
+		visibility:visible;
+		width:45%;
+	}
+	#skullo , #skullobak {
+		display: none;
+	}
+	#tinygraphic {
+		display: inline-block;
+		align:center;
+	}
+	#tagline {display: none;}
+}
+
+@media screen and (max-width: 1189px) {
+	#leftbar , #rightbar {
+		visibility:visible;
+		width:40%;
+		height:clear;
+	}
+	#skullo , #skullobak {
+		display: none;
+	}
+	#tinygraphic {
+		display: block;
+	}
+	#tagline {display: none;}
+
+}
+@media screen and (max-width: 599px) {
+	#middlesection {
+		padding: 0px;
+		float: left;
+		width: 98%;
+	}
+	#leftbar , #rightbar {
+		visibility:visible;
+		width:95%;
+		min-height: 50px;
+		border:0px solid blue;
+		float: left;
+		margin-top: 2px;
+	}
+
+	#skullo , #skullobak {
+		display: none;
+	}
+	#tinygraphic {
+		display: block;
+		margin-left: 35%;
+		margin-right: 50%;
+	}
+	#tagline {display: none;}
+		/*curvy corners*/
+	
+
+}
+
+/*
+#rightbar {
+	border: 0px solid gray;
+	visibility:hidden;
+	/*color: #113939;*//*
+	float:right;
+	width:27%;
+	height: 370px;
+	padding: 15px 25px 15px 25px;
+	background-color: #ffd8f6;
+	/*curvy corners*//*
+	-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+			-khtml-border-radius: 20px;
+				border-radius: 20px;
+	/*shadow*//*
+	-webkit-box-shadow: 0px 15px 15px #ccc;
+		-moz-box-shadow: 0px 15px 15px #ccc;
+			box-shadow: 0px 15px 15px #ccc;
+}*/
