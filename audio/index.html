@@ -1,24 +1,64 @@
+<!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.playlist.js"></script>
+<meta charset="UTF-8">
+<title>Simple M3U Web Player</title>
 </head>
-
 <body>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('audio').playlistParser({
-        proxy: 'proxy.php'
-        });
-    });
-</script>
+
+<h2>Audio Playlist Player</h2>
 <p>
     <b>Errors Mixes</b>
     <br> 
     <em>Updated 2/10/26</em>
 </p>
-<p align=left>
-    <audio controls src="https://drive.google.com/file/d/13amhwQJnzTFnZXT26w7nR-k-On3Z8eM-/view?usp=drive_link">
-</p>
+
+<audio id="player" controls autoplay></audio>
+
+<script>
+const playlistUrl = "playlist.m3u"; // <-- Replace with your .m3u URL
+
+let tracks = [];
+let currentTrack = 0;
+const audio = document.getElementById("player");
+
+// Fetch and parse the M3U playlist
+fetch(playlistUrl)
+  .then(response => response.text())
+  .then(text => {
+    tracks = text
+      .split("\n")
+      .map(line => line.trim())
+      .filter(line => line && !line.startsWith("#"));
+
+    if (tracks.length > 0) {
+      loadTrack(currentTrack);
+    } else {
+      alert("No playable tracks found in playlist.");
+    }
+  })
+  .catch(err => {
+    console.error("Failed to load playlist:", err);
+    alert("Could not load playlist.");
+  });
+
+function loadTrack(index) {
+  audio.src = tracks[index];
+  audio.play();
+}
+
+// Auto-play next track when one ends
+audio.addEventListener("ended", () => {
+  currentTrack++;
+  if (currentTrack < tracks.length) {
+    loadTrack(currentTrack);
+  } else {
+    currentTrack = 0; // loop back to start
+    loadTrack(currentTrack);
+  }
+});
+</script>
+
 </body>
 </html>
+
